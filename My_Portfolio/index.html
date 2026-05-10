@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs | Digital Craftsmanship</title>
+  <meta name="description" content="Full Stack Development Project 1 – Responsive Frontend Interface by DecodeLabs Batch 2026." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Decode<span>Labs</span></a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#projects" class="btn-cta">Get Started</a>
+      </nav>
+
+      <button
+        class="hamburger"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation"
+        id="hamburgerBtn"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#projects" class="btn-cta">Get Started</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-inner">
+      <span class="hero-badge">DecodeLabs — Batch 2026</span>
+      <h1>Build the <em>Future</em><br/>of the Web</h1>
+      <p>
+        Master responsive frontend development using pure HTML5, CSS3, and
+        JavaScript. No frameworks — just real fundamentals, real craft.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+          View Projects
+        </button>
+        <button class="btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE LAYOUT -->
+  <div class="page-layout">
+
+    <main id="main-content">
+
+      <!-- ABOUT -->
+      <section id="about" aria-labelledby="about-title" style="margin-bottom:3rem;">
+        <h2 class="section-title reveal" id="about-title">What is Project 1?</h2>
+        <p class="section-subtitle reveal">The Responsive Architecture — A Strategic Execution Framework</p>
+        <div style="background:var(--white);border-radius:var(--radius);padding:1.5rem;box-shadow:0 2px 12px var(--shadow);" class="reveal">
+          <p style="margin-bottom:1rem;">
+            Project 1 is your <strong>interface phase</strong> at DecodeLabs. Before connecting complex
+            backend databases, you master the art of building flexible frontends. This milestone proves you
+            can craft user-friendly experiences that work seamlessly on any device.
+          </p>
+          <p>
+            The philosophy: <em>the web is a dynamic, inclusive information system.</em> Your code
+            determines who has access to information and how the world experiences it.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title reveal" id="projects-title">Content Grid</h2>
+        <p class="section-subtitle reveal">Key pillars of the responsive architecture</p>
+
+        <div class="content-grid">
+
+          <article class="card reveal" tabindex="0" aria-label="Pillar 1: Strategy">
+            <div class="card-img" role="img" aria-label="Blueprint icon">🗺️</div>
+            <div class="card-body">
+              <span class="card-tag">Pillar 1</span>
+              <h3 class="card-title">Strategy & The Blueprint</h3>
+              <p class="card-text">
+                Use Empathy Maps for research, then wireframe with Visily, Balsamiq, or pen and paper.
+                Golden rule: if it doesn't work in grayscale, colour won't fix it.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">Discovery → Wireframe</span>
+                <a href="#" class="card-link">Read more →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0" aria-label="Pillar 2: Visual Design">
+            <div class="card-img" role="img" aria-label="Palette icon">🎨</div>
+            <div class="card-body">
+              <span class="card-tag">Pillar 2</span>
+              <h3 class="card-title">Visual Design & 2025 Aesthetics</h3>
+              <p class="card-text">
+                Adopt the 2025 palette: Mocha Mousse, Ethereal Blue, Moonlit Grey. Max 2 font families,
+                3 weights. Shift from sterile tech to warmth and grounding.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">Style → Palette</span>
+                <a href="#" class="card-link">Read more →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0" aria-label="Pillar 3: Implementation">
+            <div class="card-img" role="img" aria-label="Code icon">⚙️</div>
+            <div class="card-body">
+              <span class="card-tag">Pillar 3</span>
+              <h3 class="card-title">Implementation — The Foundation</h3>
+              <p class="card-text">
+                Semantic HTML5 landmarks — header, nav, main, article, footer — are the bedrock of
+                accessibility and SEO. Proper semantics create a table of contents for screen readers.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">Semantics → Accessibility</span>
+                <a href="#" class="card-link">Read more →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0" aria-label="CSS Grid and Flexbox">
+            <div class="card-img" role="img" aria-label="Layout icon">📐</div>
+            <div class="card-body">
+              <span class="card-tag">Layout</span>
+              <h3 class="card-title">CSS Grid + Flexbox System</h3>
+              <p class="card-text">
+                CSS Grid for macro page structure. Flexbox for micro components like navbars.
+                Mobile-first: start at one column, expand with min-width media queries at 768px and 1024px.
+              </p>
+              <div class="card-footer">
+                <span class="card-meta">768px Tablet · 1024px Desktop</span>
+                <a href="#" class="card-link">Read more →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside id="skills" aria-label="Skills and roadmap sidebar">
+
+      <div class="sidebar-widget reveal">
+        <h2 class="widget-title">Key Skills</h2>
+        <div class="skill-item">
+          <div class="skill-label"><span>HTML5 Semantics</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>CSS Grid / Flexbox</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Responsive Design</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>JavaScript (Vanilla)</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>WCAG Accessibility</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="sidebar-widget reveal">
+        <h2 class="widget-title">Execution Roadmap</h2>
+        <ol class="roadmap-list">
+          <li class="roadmap-step">
+            <div class="step-num done">1</div>
+            <div class="step-text"><strong>Discovery</strong><span>Define "How Might We"</span></div>
+          </li>
+          <li class="roadmap-step">
+            <div class="step-num done">2</div>
+            <div class="step-text"><strong>Wireframe</strong><span>Grayscale, mobile-first</span></div>
+          </li>
+          <li class="roadmap-step">
+            <div class="step-num">3</div>
+            <div class="step-text"><strong>Semantics</strong><span>HTML Landmarks</span></div>
+          </li>
+          <li class="roadmap-step">
+            <div class="step-num">4</div>
+            <div class="step-text"><strong>Style</strong><span>CSS Grid/Flex & 2025 Palette</span></div>
+          </li>
+          <li class="roadmap-step">
+            <div class="step-num">5</div>
+            <div class="step-text"><strong>Logic</strong><span>State & Interactivity</span></div>
+          </li>
+          <li class="roadmap-step">
+            <div class="step-num">6</div>
+            <div class="step-text"><strong>Audit</strong><span>LCP/CLS & Accessibility</span></div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="sidebar-widget reveal" id="contact">
+        <h2 class="widget-title">Contact DecodeLabs</h2>
+        <p style="font-size:.85rem;color:#666;margin-bottom:1rem;">Questions about Project 1? Reach out to your mentors.</p>
+        <a href="mailto:decodelabs.tech@gmail.com" style="display:block;background:var(--grey);border-radius:8px;padding:.75rem 1rem;font-size:.85rem;color:var(--dark);margin-bottom:.5rem;">
+          ✉️ decodelabs.tech@gmail.com
+        </a>
+        <a href="tel:+918933006408" style="display:block;background:var(--grey);border-radius:8px;padding:.75rem 1rem;font-size:.85rem;color:var(--dark);">
+          📞 +91 89330 06408
+        </a>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats-section" aria-label="Project statistics">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><h3>3</h3><p>Core Technologies</p></div>
+      <div class="stat-item reveal"><h3>6</h3><p>Execution Steps</p></div>
+      <div class="stat-item reveal"><h3>3</h3><p>Pillars of Design</p></div>
+      <div class="stat-item reveal"><h3>100%</h3><p>No Frameworks</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span style="font-family:var(--font-head);font-weight:700;font-size:1.2rem;color:var(--blue);">
+          Decode<span style="color:#fff">Labs</span>
+        </span>
+        <p>Empowering full-stack developers through hands-on industrial training. Batch 2026, Greater Lucknow, India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="#about">Overview</a></li>
+          <li><a href="#projects">Pillars</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.decodelabs.tech" target="_blank" rel="noopener">Website</a></li>
+          <li><a href="mailto:decodelabs.tech@gmail.com">Email</a></li>
+          <li><a href="tel:+918933006408">Phone</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DecodeLabs. All rights reserved.</span>
+      <span>Built with HTML5 · CSS3 · JavaScript</span>
+    </div>
+  </footer>
+
+  <button id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- Link to your JS file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
